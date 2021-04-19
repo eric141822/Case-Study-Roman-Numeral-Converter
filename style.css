@@ -12,8 +12,10 @@ label {
   padding: 5px;
 }
 
-#output {
-  font-weight: bold;
+input[type="textarea"]{
+  width:100%;
+  font-size: x-large;
+  height:auto;
 }
 
 input[type="text"] {
@@ -31,7 +33,7 @@ div.container {
   height: auto;
 }
 div.row {
+  width: 100%;
   display: flex;
   justify-content: center;
-  overflow: auto;
 }

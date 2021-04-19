@@ -10,7 +10,8 @@ window.onload = function (){
         const val = parseInt(document.getElementById("decimal").value);
         const result = toRoman(val);
         let output = document.getElementById("output");
-        output.innerHTML = "Output: " + result;
+        output.value = result;
+        //output.innerHTML = "Output: " + result;
         document.getElementById("decimal").value = "";
     });
 
@@ -18,7 +19,8 @@ window.onload = function (){
         const str = document.getElementById("roman").value;
         const result = toInt(str);
         let output = document.getElementById("output");
-        output.innerHTML = "Output: " + result;
+        output.value = result;
+        //output.innerHTML = "Output: " + result;
         document.getElementById("roman").value = "";
     })
 }
