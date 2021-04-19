@@ -32,5 +32,6 @@ div.container {
 }
 div.row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  overflow: auto;
 }

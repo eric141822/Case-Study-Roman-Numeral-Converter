@@ -28,7 +28,7 @@ window.onload = function (){
 
 function toRoman(num){
 	if (isNaN(num)){
-		return NaN;
+		return "Input invalid, please enter an integer.";
 	}
 	else{
 		let roman = "";
@@ -44,16 +44,23 @@ function toRoman(num){
 
 
 function toInt(roman){
+	if (roman.length <= 0){
+		return "Please enter some input, all letters should be uppercase.";
+	}
 	let ans = 0;
 	for (let i = 0; i < roman.length; i++){
 		let cur = romanToInt[roman[i]];
 		let next = romanToInt[roman[i+1]];
+		
 		if (cur < next){
 			ans -= cur;
 		}
 		else{
 			ans += cur;
 		}
+	}
+	if (isNaN(ans)){
+		return "Input invalid, please enter valid Roman numeral letters, in uppercase.";
 	}
 	return ans;
 }
