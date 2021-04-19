@@ -1,0 +1,36 @@
+:root {
+  --bg: lightyellow;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+label {
+  font-size: x-large;
+  margin: 5px;
+  padding: 5px;
+}
+
+#output {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  font-size: x-large;
+  margin: 0px 5px 0px 5px;
+  padding: 0px 5px 0px 5px;
+}
+
+div.container {
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+div.row {
+  display: flex;
+  justify-content: space-around;
+}
